@@ -6,9 +6,9 @@ namespace FactoryMethodPattern.FactoryMethod
     {
         public void PlanDelivery()
         {
-            Transport t = CreateTransport();
+            ITransport t = CreateTransport();
             t.Deliver();
         }
-        protected abstract Transport CreateTransport();
+        protected abstract ITransport CreateTransport();
     }
 }

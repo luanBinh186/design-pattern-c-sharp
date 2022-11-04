@@ -1,6 +1,6 @@
 ﻿namespace FactoryMethodPattern.Transports
 {
-    public class Truck : Transport
+    public class Truck : ITransport
     {
         public void Deliver()
         {

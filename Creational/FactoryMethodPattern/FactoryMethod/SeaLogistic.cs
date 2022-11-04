@@ -4,7 +4,7 @@ namespace FactoryMethodPattern.FactoryMethod
 {
     public class SeaLogistic : Logistic
     {
-        protected override Transport CreateTransport()
+        protected override ITransport CreateTransport()
         {
             return new Ship();
         }

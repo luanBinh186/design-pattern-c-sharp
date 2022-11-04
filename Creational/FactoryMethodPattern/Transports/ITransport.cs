@@ -1,6 +1,6 @@
 ﻿namespace FactoryMethodPattern.Transports
 {
-    public interface Transport
+    public interface ITransport
     {
         public void Deliver();
     }
