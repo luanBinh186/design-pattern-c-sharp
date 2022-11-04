@@ -9,6 +9,8 @@ namespace FactoryMethodPattern.FactoryMethod
             ITransport t = CreateTransport();
             t.Deliver();
         }
+
+        // Factory method
         protected abstract ITransport CreateTransport();
     }
 }

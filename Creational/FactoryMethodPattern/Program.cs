@@ -1,11 +1,9 @@
-﻿
-using FactoryMethodPattern.FactoryMethod;
+﻿using FactoryMethodPattern.FactoryMethod;
 
 namespace FactoryMethodPattern
 {
     static class Program
     {
-
         public static void Main()
         {
             string methodLogistic = "Road";
