@@ -1,10 +1,10 @@
 ﻿namespace FactoryMethodPattern.Transports
 {
-    public class Ship : ITransport
+    public class Motorcycle : ITransport
     {
         public void Deliver()
         {
-            Console.WriteLine("Deliver by sea");
+            Console.WriteLine("Deliver by Motorcycle");
         }
     }
 }

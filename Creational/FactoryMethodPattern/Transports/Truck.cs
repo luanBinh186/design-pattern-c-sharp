@@ -4,7 +4,7 @@
     {
         public void Deliver()
         {
-            Console.WriteLine("Deliver by land");
+            Console.WriteLine("Deliver by Truck");
         }
     }
 }

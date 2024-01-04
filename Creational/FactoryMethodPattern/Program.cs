@@ -1,4 +1,5 @@
 ﻿using FactoryMethodPattern.FactoryMethod;
+using FactoryMethodPattern.Transports;
 
 namespace FactoryMethodPattern
 {
@@ -6,21 +7,11 @@ namespace FactoryMethodPattern
     {
         public static void Main()
         {
-            string methodLogistic = "Road";
-            Logistic lg;
-            switch (methodLogistic)
-            {
-                case "Road":
-                    lg = new RoadLogistic();
-                    lg.PlanDelivery();
-                    break;
-                case "Sea":
-                    lg = new SeaLogistic();
-                    lg.PlanDelivery();
-                    break;
-                default:
-                    break;
-            }
+            ITransport truck = Factory.CreateTransport("truck");
+            truck.Deliver(); // Xe tải đang giao hàng
+            
+            ITransport motorcycle = Factory.CreateTransport("motorcycle");
+            motorcycle.Deliver(); // Xe máy đang giao hàng
         }
     }
 }
